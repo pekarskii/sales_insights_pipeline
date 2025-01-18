@@ -95,4 +95,3 @@ LIMIT 1;
 - [PostgreSQL](https://www.postgresql.org/)
 - [Matplotlib](https://matplotlib.org/stable/index.html)
 
-**Удачи в проекте!**
