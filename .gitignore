@@ -1,4 +1,5 @@
 linux_venv/
-
+01_issue.md
+generate_sales_data.py
 .idea/
 .vscode/
