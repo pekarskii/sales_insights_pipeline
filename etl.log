@@ -1,0 +1,14 @@
+2025-01-26 14:31:08,678 - INFO - Starting ETL process
+2025-01-26 14:31:08,682 - ERROR - ETL process failed: [Errno 2] No such file or directory: 'sales_data.csv'
+2025-01-26 14:31:51,598 - INFO - Starting ETL process
+2025-01-26 14:31:51,605 - INFO - Loaded 100 initial records
+2025-01-26 14:31:51,607 - INFO - Removed 0 duplicates
+2025-01-26 14:31:51,612 - INFO - Fixed 0 missing values
+2025-01-26 14:31:51,612 - INFO - Added total_price column
+2025-01-26 14:31:51,613 - ERROR - ETL process failed: invalid literal for int() with base 10: 'your_port'
+2025-01-26 14:34:52,927 - INFO - Starting ETL process
+2025-01-26 14:34:52,933 - INFO - Loaded 100 initial records
+2025-01-26 14:34:52,935 - INFO - Removed 0 duplicates
+2025-01-26 14:34:52,939 - INFO - Fixed 0 missing values
+2025-01-26 14:34:52,942 - INFO - Added total_price column
+2025-01-26 14:34:52,943 - ERROR - ETL process failed: invalid literal for int() with base 10: 'your_port'
