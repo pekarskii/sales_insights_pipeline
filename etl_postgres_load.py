@@ -80,7 +80,7 @@ def etl_process():
         return False
 
 
-if __name__ == "__main__": # sa
+if __name__ == "__main__":
     if etl_process():
         print("ETL completed successfully!")
     else:
