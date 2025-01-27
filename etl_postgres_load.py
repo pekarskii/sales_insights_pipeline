@@ -85,3 +85,5 @@ if __name__ == "__main__":
         print("ETL completed successfully!")
     else:
         print("ETL failed! Check etl.log for details")
+
+
