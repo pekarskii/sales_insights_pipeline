@@ -42,11 +42,11 @@ def etl_process():
         # ========== Load ==========
         # Настройка подключения к PostgreSQL
         DB_CONFIG = {
-            'user': 'your_username',
-            'password': 'your_password',
-            'host': 'your_host',
-            'port': 'your_port',
-            'db': 'your_database'
+            'user': 'postgres',
+            'password': 'local',
+            'host': 'localhost',
+            'port': '5432',
+            'db': 'sales_database_'
         }
 
         engine = create_engine(

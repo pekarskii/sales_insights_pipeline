@@ -12,3 +12,60 @@
 2025-01-26 14:34:52,939 - INFO - Fixed 0 missing values
 2025-01-26 14:34:52,942 - INFO - Added total_price column
 2025-01-26 14:34:52,943 - ERROR - ETL process failed: invalid literal for int() with base 10: 'your_port'
+2025-01-26 19:19:47,375 - INFO - Starting ETL process
+2025-01-26 19:19:47,389 - INFO - Loaded 100 initial records
+2025-01-26 19:19:47,398 - INFO - Removed 0 duplicates
+2025-01-26 19:19:47,407 - INFO - Fixed 0 missing values
+2025-01-26 19:19:47,408 - INFO - Added total_price column
+2025-01-26 19:19:47,438 - ERROR - ETL process failed: No module named 'psycopg2'
+2025-01-26 19:22:31,433 - INFO - Starting ETL process
+2025-01-26 19:22:31,443 - INFO - Loaded 100 initial records
+2025-01-26 19:22:31,444 - INFO - Removed 0 duplicates
+2025-01-26 19:22:31,453 - INFO - Fixed 0 missing values
+2025-01-26 19:22:31,454 - INFO - Added total_price column
+2025-01-26 19:22:31,472 - ERROR - ETL process failed: No module named 'psycopg2'
+2025-01-26 19:26:56,277 - INFO - Starting ETL process
+2025-01-26 19:26:56,285 - INFO - Loaded 100 initial records
+2025-01-26 19:26:56,287 - INFO - Removed 0 duplicates
+2025-01-26 19:26:56,291 - INFO - Fixed 0 missing values
+2025-01-26 19:26:56,292 - INFO - Added total_price column
+2025-01-26 19:26:56,317 - ERROR - ETL process failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-26 19:27:01,394 - INFO - Starting ETL process
+2025-01-26 19:27:01,401 - INFO - Loaded 100 initial records
+2025-01-26 19:27:01,402 - INFO - Removed 0 duplicates
+2025-01-26 19:27:01,410 - INFO - Fixed 0 missing values
+2025-01-26 19:27:01,411 - INFO - Added total_price column
+2025-01-26 19:27:01,439 - ERROR - ETL process failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-26 19:55:28,491 - INFO - Starting ETL process
+2025-01-26 19:55:28,496 - INFO - Loaded 100 initial records
+2025-01-26 19:55:28,498 - INFO - Removed 0 duplicates
+2025-01-26 19:55:28,502 - INFO - Fixed 0 missing values
+2025-01-26 19:55:28,502 - INFO - Added total_price column
+2025-01-26 19:55:28,530 - ERROR - ETL process failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-26 19:58:38,961 - INFO - Starting ETL process
+2025-01-26 19:58:38,966 - INFO - Loaded 100 initial records
+2025-01-26 19:58:38,968 - INFO - Removed 0 duplicates
+2025-01-26 19:58:38,973 - INFO - Fixed 0 missing values
+2025-01-26 19:58:38,973 - INFO - Added total_price column
+2025-01-26 19:58:38,999 - ERROR - ETL process failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-26 19:58:43,797 - INFO - Starting ETL process
+2025-01-26 19:58:43,803 - INFO - Loaded 100 initial records
+2025-01-26 19:58:43,805 - INFO - Removed 0 duplicates
+2025-01-26 19:58:43,809 - INFO - Fixed 0 missing values
+2025-01-26 19:58:43,810 - INFO - Added total_price column
+2025-01-26 19:58:43,836 - ERROR - ETL process failed: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
