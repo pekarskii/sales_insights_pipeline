@@ -54,7 +54,7 @@ def etl_process():
             f"{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['db']}"
         )
 
-        # Загрузка данных в БД
+        # Загрузка данных в БД.
         df.to_sql(
             name='sales',
             con=engine,
