@@ -69,3 +69,27 @@
 	Is the server running on that host and accepting TCP/IP connections?
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-28 21:52:53,310 - INFO - Starting ETL process
+2025-01-28 21:52:53,324 - INFO - Loaded 100 initial records
+2025-01-28 21:52:53,333 - INFO - Removed 0 duplicates
+2025-01-28 21:52:53,343 - INFO - Fixed 0 missing values
+2025-01-28 21:52:53,344 - INFO - Added total_price column
+2025-01-28 21:52:53,411 - ERROR - ETL process failed: The type of transaction_id is not a SQLAlchemy type
+2025-01-28 21:53:56,561 - INFO - Starting ETL process
+2025-01-28 21:53:56,566 - INFO - Loaded 100 initial records
+2025-01-28 21:53:56,568 - INFO - Removed 0 duplicates
+2025-01-28 21:53:56,572 - INFO - Fixed 0 missing values
+2025-01-28 21:53:56,573 - INFO - Added total_price column
+2025-01-28 21:53:56,613 - ERROR - ETL process failed: The type of transaction_id is not a SQLAlchemy type
+2025-01-28 21:56:31,071 - INFO - Starting ETL process
+2025-01-28 21:56:31,081 - INFO - Loaded 100 initial records
+2025-01-28 21:56:31,082 - INFO - Removed 0 duplicates
+2025-01-28 21:56:31,089 - INFO - Fixed 0 missing values
+2025-01-28 21:56:31,090 - INFO - Added total_price column
+2025-01-28 21:56:31,188 - INFO - Successfully loaded 100 records to PostgreSQL
+2025-01-28 21:59:09,346 - INFO - Starting ETL process
+2025-01-28 21:59:09,350 - INFO - Loaded 100 initial records
+2025-01-28 21:59:09,352 - INFO - Removed 0 duplicates
+2025-01-28 21:59:09,356 - INFO - Fixed 0 missing values
+2025-01-28 21:59:09,356 - INFO - Added total_price column
+2025-01-28 21:59:09,440 - INFO - Successfully loaded 100 records to PostgreSQL

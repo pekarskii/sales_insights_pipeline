@@ -1,6 +1,6 @@
 # etl_postgres_load.py
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, BigInteger, Integer, String, DECIMAL, Date
 import logging
 
 # Настройка логирования
@@ -9,7 +9,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[logging.FileHandler('etl.log'), logging.StreamHandler()]
 )
-
 
 def etl_process():
     try:
@@ -43,10 +42,10 @@ def etl_process():
         # Настройка подключения к PostgreSQL
         DB_CONFIG = {
             'user': 'postgres',
-            'password': 'local',
+            'password': 'postgres',
             'host': 'localhost',
             'port': '5432',
-            'db': 'sales_database_'
+            'db': 'postgres'
         }
 
         engine = create_engine(
@@ -54,22 +53,25 @@ def etl_process():
             f"{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['db']}"
         )
 
+        # Обновленный словарь dtype
+        dtype_dict = {
+            'transaction_id': BigInteger,
+            'store_id': Integer,
+            'product_id': Integer,
+            'category': String(50),
+            'price': DECIMAL(10, 2),
+            'quantity': Integer,
+            'sale_date': Date,
+            'total_price': DECIMAL(10, 2)
+        }
+
         # Загрузка данных в БД.
         df.to_sql(
             name='sales',
             con=engine,
             if_exists='replace',
             index=False,
-            dtype={
-                'transaction_id': 'BIGINT PRIMARY KEY',
-                'store_id': 'INTEGER',
-                'product_id': 'INTEGER',
-                'category': 'VARCHAR(50)',
-                'price': 'DECIMAL(10,2)',
-                'quantity': 'INTEGER',
-                'sale_date': 'DATE',
-                'total_price': 'DECIMAL(10,2)'
-            }
+            dtype=dtype_dict
         )
 
         logging.info(f"Successfully loaded {len(df)} records to PostgreSQL")
@@ -79,11 +81,8 @@ def etl_process():
         logging.error(f"ETL process failed: {str(e)}")
         return False
 
-
 if __name__ == "__main__":
     if etl_process():
         print("ETL completed successfully!")
     else:
         print("ETL failed! Check etl.log for details")
-
-
