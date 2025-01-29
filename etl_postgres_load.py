@@ -7,14 +7,14 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler('etl.log'), logging.StreamHandler()]
+    handlers=[logging.FileHandler('logs/etl.log'), logging.StreamHandler()]
 )
 
 def etl_process():
     try:
         # ========== Extract ==========
         logging.info("Starting ETL process")
-        df = pd.read_csv('cleaned_sales_data.csv')
+        df = pd.read_csv('data/cleaned_sales_data.csv')
         logging.info(f"Loaded {len(df)} initial records")
 
         # ========== Transform ==========
