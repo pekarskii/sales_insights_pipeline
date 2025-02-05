@@ -50,7 +50,7 @@ transaction_id,store_id,product_id,category,price,quantity,sale_date
    ```python
    import pandas as pd
 
-   df = pd.read_csv('sales_data.csv')
+   df = pd.read_csv('data/sales_data.csv')
    ```
 2. Очистите данные:
    - Удалите дубликаты:
