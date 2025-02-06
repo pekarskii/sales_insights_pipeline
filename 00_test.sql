@@ -11,4 +11,5 @@ CREATE TABLE sales (
 
 
 
-select * from sales;
+select * from sales
+limit 20;
